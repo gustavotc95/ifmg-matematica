@@ -8,7 +8,7 @@
 		$efeito_de_transicao    = $opcoes[4]; // Mover pra esquerda (e), mover pra direita (d) ou fade (f)
 ?>
 
-		<div id="modulo-imagemdest<?php echo $id; ?>" class="wrapper modulos moduloimgdest">
+		<div id="modulo-imagemdest<?php //echo $id; ?>" class="wrapper modulos moduloimgdest">
 			<div id="imgDest" data-jcarousel="true">
 				<ul>
 				<?php

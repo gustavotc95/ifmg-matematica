@@ -80,18 +80,6 @@ get_header();
 
 						/* CPT: wpi_pessoa */
 
-/*
-						elseif ( $post->post_type == 'wpi_pessoa' ) {
-
-							echo '<a href="' . get_post_type_archive_link( 'wpi_pessoa' ) . '">Pessoas</a>';
-
-							$categories = wp_get_post_terms( get_the_ID(), 'wpi_pessoa_grupo', array() );
-
-							if ( isset( $categories[0] ) )
-						 		echo ' > <a href="' . get_term_link( $categories[0]->slug, 'wpi_pessoa_grupo' ) . '" title="' . sprintf( "Ver todos os %s", $categories[0]->name ) . '" ' . '>' . $categories[0]->name.'</a> ';
-
-						}
-*/
 					?>
 					</div>
 

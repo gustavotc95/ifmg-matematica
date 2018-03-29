@@ -14,6 +14,17 @@
 				</section>
 
 				<section id="single_post">
+					<?php
+					$home = get_home_url()."/";
+					$link = get_permalink();
+					if ( $home === $link) {
+						//$date=$inst_options['wpinst_modulos'];
+						//var_dump($date);
+						//echo $date->{0};
+						carregaModulos('Imagemdest-2-4');
+
+					}
+					?>
 					<div class="content_header corFundo"><?php the_title() ?></div>
 					<article id="single_post_inside">
 							<p>
