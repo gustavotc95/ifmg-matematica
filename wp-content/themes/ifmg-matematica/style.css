@@ -3,19 +3,17 @@ Theme Name: UFPel 2016
 Theme URI: http://wp.ufpel.edu.br/sobre/tema-ufpel-2016
 Author: Equipe WP UFPel
 Author URI: http://wp.ufpel.edu.br/equipe
-Description: UFPel 2016 é a versão totalmente personalizável do tema originalmente 
-desenvolvido para os websites institucionais da Universidade Federal de Pelotas. 
-Implementa um versátil editor de layout, que permite personalizar a página inicial do site de forma visual,
-e conta com layout responsivo para excelente adaptação a dispositivos móveis. 
-Oferece opção de logo personalizado no cabeçalho, duas áreas de menus, 
-modelo de página interna sem barra lateral, opção de alto contraste (acessibilidade) e widgets exclusivos. 
-A barra de identidade visual do Governo Federal pode ser exibida, opcionalmente, no topo do site. 
-A documentação completa está disponível no <a href="http://wp.ufpel.edu.br/sobre/tema-ufpel-2016"> site do tema</a>.
-Tags: one-column, two-columns, right-sidebar, custom-colors, custom-logo, custom-header, custom-menu, featured-images, footer-widgets, full-width-template, sticky-post, theme-options, responsive-layout
 License: GNU General Public License, version 2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Version: 1.1
 */
+
+/*
+Theme Name: UFPel 2016 - Alterado 
+Author: Gustavo Teixeira de Castro
+Version: 1.0
+*/
+
 
 /* RESET */
 
@@ -108,13 +106,13 @@ sup {
     box-sizing: border-box;
 }
 
-#menu_ufpel, #menu_topo{
+#menu_topo{
 	box-sizing: border-box;
 	height: 32px;
 	overflow: hidden;
 }
 
-#menu_ufpel span, #menu_topo span{
+#menu_topo span{
 	float: left;
 	padding: 7px 10px;
 }
@@ -142,19 +140,19 @@ sup {
 	box-sizing: border-box;
 }
 
-#menu-menu-ufpel ul, #menu-menu-topo ul {
+#menu-menu-topo ul {
 	display: none;
 }
 
-#menu_ufpel_list, #menu_topo_list {
+#menu_topo_list {
 	max-width: 810px;
 }
 
-#menu_ufpel_list ul li:last-child, #menu_topo_list ul li:last-child{
+#menu_topo_list ul li:last-child{
 	margin-right: 0px;
 }
 
-#menu_ufpel_acess, #menu_topo_acess{
+#menu_topo_acess{
 	float: right;
 }
 
@@ -838,40 +836,40 @@ footer a {
 	background-position-y: top;
 }
 
-		#erro_content h1{
-			font-size: 800%;
-			position: absolute;
-			top: 110px;
-			left: 26px;
-			letter-spacing: 20px;
+#erro_content h1{
+	font-size: 800%;
+	position: absolute;
+	top: 110px;
+	left: 26px;
+    letter-spacing: 20px;
+}
+
+#erro_content h2{
+	position: absolute;
+	top: 218px;
+	left: 35px;
+	font-size: 235%;
+	letter-spacing: -1px;
+	font-weight: bold;
+	text-transform: uppercase;
 		}
 
-		#erro_content h2{
-			position: absolute;
-			top: 218px;
-			left: 35px;
-			font-size: 235%;
-			letter-spacing: -1px;
-			font-weight: bold;
-			text-transform: uppercase;
-		}
+#erro_content h3{
+	width: 524px;
+	position: absolute;
+	top: 276px;
+	left: 35px;
+	font-size: 180%;
+}
 
-		#erro_content h3{
-			width: 524px;
-			position: absolute;
-			top: 276px;
-			left: 35px;
-			font-size: 180%;
-		}
-
-		#erro_img{
-			background: url(imagens/404erro2.1.png) no-repeat;
-			background-position-y: center;
-			background-position-x: 570px;
-			position: relative;
-			height: 100%;
-			opacity: 0.17;
-		}
+#erro_img{
+	background: url(imagens/404erro2.1.png) no-repeat;
+	background-position-y: center;
+	background-position-x: 570px;
+ 	position: relative;
+	height: 100%;
+	opacity: 0.17;
+}
 
 
 /* Paginação */
@@ -1060,8 +1058,8 @@ ul.page-numbers .current {
 		width: 100%;
 	}
 
-	.page #busca, .page #menu_principal, .page #sidebar, .page #menu_ufpel, .page #menu_topo, .page #foot_content, .page #barra-brasil, .page #midiassociais, .page #creditos, .page .sharedaddy,
-	.single #busca, .single #menu_principal, .single #sidebar, .single #menu_ufpel, .single #menu_topo, .single #foot_content, .single #barra-brasil, .single #midiassociais, .single #creditos, .single .sharedaddy,
+	.page #busca, .page #menu_principal, .page #sidebar, .page #menu_topo, .page #foot_content, .page #barra-brasil, .page #midiassociais, .page #creditos, .page .sharedaddy,
+	.single #busca, .single #menu_principal, .single #sidebar, .single #menu_topo, .single #foot_content, .single #barra-brasil, .single #midiassociais, .single #creditos, .single .sharedaddy,
 	.single .content_header,
 	.page .moduloimgdest, .page .modulo-carrossel, .page .modulo-vitrine,
 	.single .moduloimgdest, .single .modulo-carrossel, .single .modulo-vitrine	{
@@ -1114,7 +1112,7 @@ ul.page-numbers .current {
 
 /* Botões de ativação dos menus e sidebar - ocultos na versão desktop */
 
-.principal-toggle, .ufpel-toggle, .topo-toggle,  .sidebar-toggle {
+.principal-toggle, .topo-toggle,  .sidebar-toggle {
 	display: none;
 }
 

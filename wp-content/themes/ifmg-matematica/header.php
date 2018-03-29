@@ -69,23 +69,6 @@
 		</div>
 		<?php endif; ?>
 
-		<div id="menu_ufpel" class="corFundo">
-			<div class="wrapper">
-				<div class="hor_center" id="menu_ufpel_list">
-				<?php if ( has_nav_menu( 'menu-topo' ) ): ?>
-					<button class="ufpel-toggle"><span class="dashicons dashicons-menu"></span> &nbsp;MENU</button>
-					<?php wp_nav_menu( array( 'theme_location' => 'menu-topo', 'depth' => 1, 'menu_id' => 'menu-menu-ufpel', 'menu_class' => 'menu corFundo', 'container' => '') ); ?>
-				<?php endif; ?>
-				</div>
-				<div class="hor_center" id="menu_ufpel_acess">
-					<ul>
-						<li class="acess"><a class="fonte_dim" href="#" title="Diminuir fonte">A-</a><a class="fonte_nor" href="#" title="Fonte normal">A</a><a class="fonte_aum" href="#" title="Aumentar fonte">A+</a></li>
-						<li><a id="contraste" href="#">CONTRASTE</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
 		<div id="menu_topo" class="corFundo">
 			<div class="wrapper">
 				<div class="hor_center" id="menu_topo_list">
