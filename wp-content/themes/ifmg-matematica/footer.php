@@ -106,7 +106,6 @@
 						</div>
 						<div id="copyright">&copy;<?php echo date("Y");?> <?php bloginfo('name'); ?>.</div>
 						<div id="wp">Criado com <a href="http://wordpress.org" target="_blank">WordPress</a>. </div>
-						<div id="equipe">Tema <a href="http://wp.ufpel.edu.br/sobre/tema-ufpel-2016" target="_blank">UFPel 2016</a> desenvolvido por <a href="http://wp.ufpel.edu.br/equipe" target="_blank">Equipe WP UFPel</a>.</div>
 					</div>
 				</div>
 			</div>

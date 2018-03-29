@@ -69,8 +69,8 @@
 		</div>
 		<?php endif; ?>
 
-		<div id="menu_topo" class="corFundo">
-			<div class="wrapper">
+		<div id="menu_topo" class="acessibilidade">
+			<div class="wrapper header">
 				<div class="hor_center" id="menu_topo_list">
 				<?php if ( has_nav_menu( 'menu-topo' ) ): ?>
 					<button class="topo-toggle"><span class="dashicons dashicons-menu"></span> &nbsp;MENU</button>
@@ -86,12 +86,12 @@
 			</div>
 		</div>
 
-		<div class="wrapper">
+		<div class="wrapper header">
 			<div id="header_content">
 				<div id="titulo" class="titulosite">
 					<a href="<?php bloginfo('url');?>">
 						<span id="und_vinc"><?php if ( trim($inst_options['und_vinc']) ) echo $inst_options['und_vinc']; ?></span>
-						<span id="nomesite"><?php bloginfo('name'); ?></span>
+						<h1 id="nomesite"><?php bloginfo('name'); ?></h1>
 						<span class="descricaosite"><?php bloginfo('description'); ?></span>
 					</a>
 				</div>
@@ -110,13 +110,14 @@
 			<div class="limpa"></div>
 		</div>
 
-		<div class="wrapper">
+		<div class="wrapper header menu">
 			<div id="menu_principal">
 				<button class="principal-toggle"><span class="dashicons dashicons-menu"></span> &nbsp;MENU</button>
 				<?php wp_nav_menu( array( 'theme_location' => 'menu-principal', 'container' => '') ); ?>
 			</div>
 		</div>
-		<div class="limpa"></div>
+</header>
+
 
 		<?php
 		if ( ! is_home() ) {
@@ -157,5 +158,5 @@
 		} // if ( ! is_home() )
 		?>
 
-	</header>
+	
 	<div class="limpa"></div>

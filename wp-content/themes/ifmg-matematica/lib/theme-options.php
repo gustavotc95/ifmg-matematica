@@ -33,7 +33,7 @@ function add_items_admin_bar_menu($admin_bar)
 	$args = array(
 		'id'    => 'opcoes-tema',
 		'parent'=> 'appearance',
-		'title' => 'Opções do Tema UFPel 2016',
+		'title' => 'Opções do Tema GOV',
 		'href'  => admin_url().'themes.php?page=theme-settings',
 		'meta'	=> array(
 						'title' => "Configure o layout da página inicial e outras opções de personalização",
