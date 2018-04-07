@@ -13,43 +13,8 @@
 	}
 ?>
 
-			<div class="wrapper">
+			<div class="wrapper footer">
 				<div id="foot_content">
-					<ul>
-						<li>
-							<h2 class="corTexto"><?php echo $inst_options['wpinst_localiza_titulo']; ?></h2>
-							<div class="textwidget">
-
-							<?php if ( current_user_can( 'edit_posts' ) && empty( $inst_options['wpinst_localiza_titulo'] ) && empty ( $inst_options['wpinst_localiza_campus'] ) && empty( $inst_options['wpinst_localiza_endereco'] ) ) : ?>
-
-								<p>
-									Personalize o conteúdo deste bloco em <b>Aparência - Opções do Tema</b>, na aba <b>Localização</b>.
-								</p>
-								<em>(Esta mensagem não é visível aos visitantes do site)</em>
-
-							<?php else: ?>
-
-								<p><b>
-									<?php echo $inst_options['wpinst_localiza_campus']; ?>
-								</b></p>
-
-								<?php if ($inst_options['wpinst_localiza_linkgmaps'] != "") : ?>
-									<a href="<?php echo $inst_options['wpinst_localiza_linkgmaps']; ?>" target="_blank" title="Localize no mapa">
-										<?php echo wpautop( $inst_options['wpinst_localiza_endereco'] ); ?>
-									</a>
-								<?php else : ?>
-									<?php echo wpautop( $inst_options['wpinst_localiza_endereco'] ); ?>
-								<?php endif; ?>
-
-								<p>
-									<?php if ( $inst_options['wpinst_localiza_telefone'] ) echo $inst_options['wpinst_localiza_telefone'] . "<br>"; ?>
-									<?php if ( $inst_options['wpinst_localiza_email'] ) echo '<a href="mailto:' . $inst_options['wpinst_localiza_email'] . '">' . $inst_options['wpinst_localiza_email'] . '</a>'; ?>
-								</p>
-
-							<?php endif; ?>
-							</div>
-						</li>
-						<li>
 							<?php if ( ( ! function_exists('dynamic_sidebar') || ! dynamic_sidebar('links2') ) && current_user_can( 'edit_posts' ) ) : ?>
 								<p>
 									<br>
@@ -57,19 +22,34 @@
 								</p>
 								<em>(Esta mensagem não é visível aos visitantes do site)</em>
 							<?php endif; ?>
-						</li>
-						<li>
-							<?php if ( ( ! function_exists('dynamic_sidebar') || ! dynamic_sidebar('links3') ) && current_user_can( 'edit_posts' ) ): ?>
-								<p>
-									<br>
-									Personalize o conteúdo deste bloco em <b>Aparência - Widgets</b>.
-								</p>
-								<em>(Esta mensagem não é visível aos visitantes do site)</em>
-							<?php endif; ?>
-						</li>
-					</ul>
 					<div id="foot_content_end" class="limpa"></div>
 				</div>
+
+<div class="footer1">
+	<div class="container">
+		<div class="row img-gov">
+			<div class="row">
+				<div class="col-xs-6"> 
+					<a href="http://www.acessoainformacao.gov.br"> 
+					<img class="img-responsive pull-left" src="https://formiga.ifmg.edu.br/images/site/acesso-a-informacao2.png" alt="Selo Acesso a Informação"> 
+					<span class="sr-only">
+						Link para o portal de Acesso à informação
+					</span> 
+					</a> 
+				</div>
+				<div class="col-xs-6"> 
+					<a href="http://www.brasil.gov.br"> 
+					<img class="img-responsive pull-right" src="https://formiga.ifmg.edu.br/images/site/brasil2.png" alt="Selo Governo Federal"> 
+					<span class="sr-only">
+						Link para o portal do governno federal
+					</span> 
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 				<div id="creditos" class="corBorda">
 					<div id="creditos_content">
 						<div id="midiassociais">
