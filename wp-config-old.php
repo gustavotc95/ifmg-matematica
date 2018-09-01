@@ -20,13 +20,13 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'matematicasite');
+define('DB_NAME', 'matematica-ifmg');
 
 /** Usuário do banco de dados MySQL */
 define('DB_USER', 'root');
 
 /** Senha do banco de dados MySQL */
-define('DB_PASSWORD', '*47219512*');
+define('DB_PASSWORD', '');
 
 /** Nome do host do MySQL */
 define('DB_HOST', 'localhost');
@@ -50,14 +50,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '.Tk~)<e8F;mx=6D-P`+5_w*z1@|#I[]sm8X[7r.Tu78:n3+2N|D4Lh%qRK`jA@:Z');
-define('SECURE_AUTH_KEY',  'MBH}`k`W&pi%^n9Y|LLOC,+,[bf4.4vC^W*H+U?]P/DISNkkju$P23ViR/23U28f');
-define('LOGGED_IN_KEY',    '1BN%hX)Ls81)adWyIh%0i+tab0>(|lRtC25cru02l/j4O}t3b~2Pr6!7[ICpfCG0');
-define('NONCE_KEY',        '2c~[>l/Z}aT+uXMZ1W5AtBnTSW394OD^KqP]YKNO|gu)%Bn|27l%3@`~:S5k^YRm');
-define('AUTH_SALT',        '&]>h?xkRm1?}w_RQ0Q[MFAYK/b,&>Fgs&}mbXPy]%l[w,*~3hJjFMd:@Pc?F[RW3');
-define('SECURE_AUTH_SALT', '@I9?u%W>K+^O(7i[$5:CU!s8H@RP3$T96S-7-s5SRk|Rlj)S*P3X2YSF^?q.QU$>');
-define('LOGGED_IN_SALT',   '~&mQ1(;<CIbG*SwltCMtmP-kR>H|>`^Mc-bwO])|*#7M^e8e+mY_.Y:rY<D9 cT_');
-define('NONCE_SALT',       'BXNB0NI&yg#@{_D5Vp;]LV,v`,%.?6]7 R,0WpU ~ap:MEiKouRdWIc4<LIv9FGK');
+define('AUTH_KEY',         'AMj/Tb]b1$,~eR{ Kc/O}Igd|5BOSD_=c-clSs#O}Vc_6_yL1D)x.MO$JDIshvVb');
+define('SECURE_AUTH_KEY',  'zB@v 6gN{.rt%ikH5f}8spq~{.P//fuq>kT|5u(8vBUrVQ09v[S_N^4}C0e|<6JB');
+define('LOGGED_IN_KEY',    ':#=(x&O.P=lS::yT~#Ere7XE[*4Y(f$^~=@|I|^PIa4)y)SYaF7)pNQNB(d;mcLn');
+define('NONCE_KEY',        'X7_k;W+XVp2Kby|?/62fJ(uw[69z^0grCE,).IhT:4PbSRuX4o]B({q0*mM3TOGv');
+define('AUTH_SALT',        'tjpb7xz%}{g{ln:=Kpc%/zjwm>[%R%d~Bzpu5~{m32DCdX{`#E>$JsI)5#<>*@|_');
+define('SECURE_AUTH_SALT', ')%E=IUCL!@|f|p,&uK!wii$*^nU{H?OnxfdSo-7{(Q%tbE30lj?&T*/KcX0|KV2<');
+define('LOGGED_IN_SALT',   '&hCGrz<7!x=7,ZY4H@iP8N~==KBmC!|faP|[1|T0Z@]:+`pZ5hL_<}H309eD$VI6');
+define('NONCE_SALT',       'Z4t[4xImw8tad%;&Ub4#w|L)29ibc_wbN@WD^9+sqq;f1UnhDx8Uip5A.acM`wj@');
 
 /**#@-*/
 

@@ -1,7 +1,4 @@
 <?php
-/**
- *  Tema UFPel 2016 para WordPress, Copyright 2013-2016 Universidade Federal de Pelotas
- */
 
 // Carrega opções do tema e define valores padrão
 $defaults = array(
