@@ -13,9 +13,8 @@
 <?php $unique_id = esc_attr( uniqid( 'search-form-' ) ); ?>
 
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<label for="<?php echo $unique_id; ?>">
-		<span class="screen-reader-text"><?php echo _x( 'Search for:', 'label', 'twentyseventeen' ); ?></span>
-	</label>
-	<input type="search" id="<?php echo $unique_id; ?>" class="search-field" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'twentyseventeen' ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
-	<button type="submit" class="search-submit"><?php echo twentyseventeen_get_svg( array( 'icon' => 'search' ) ); ?><span class="screen-reader-text"><?php echo _x( 'Search', 'submit button', 'twentyseventeen' ); ?></span></button>
+	<input type="search" id="campoBusca" class="search-field" placeholder="O que você procura?" value="<?php echo get_search_query(); ?>" name="s" />
+	
+	<span class="busca ico"><span class="dashicons dashicons-search"><input type="submit" value="" class="buscar"></span></span>
 </form>
+

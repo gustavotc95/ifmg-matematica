@@ -5816,3 +5816,72 @@ All at ###SITENAME###
 		$site_name
 	), $email_change_email['message'], $email_change_email['headers'] );
 }
+
+function cptui_register_my_cpts_acesso_rapido() {
+
+	/**
+	 * Post Type: Acesso rápido.
+	 */
+
+	$labels = array(
+		"name" => __( "Acesso rápido", "matematicaifmg" ),
+		"singular_name" => __( "Acesso rápido", "matematicaifmg" ),
+	);
+
+	$args = array(
+		"label" => __( "Acesso rápido", "matematicaifmg" ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "acesso_rapido", "with_front" => true ),
+		"query_var" => true,
+		"supports" => array( "title", "editor", "thumbnail" ),
+	);
+
+	register_post_type( "acesso_rapido", $args );
+}
+
+add_action( 'init', 'cptui_register_my_cpts_acesso_rapido' );
+
+function cptui_register_my_taxes_acessorapido() {
+
+	/**
+	 * Taxonomy: acessoRapido.
+	 */
+
+	$labels = array(
+		"name" => __( "acessoRapido", "matematicaifmg" ),
+		"singular_name" => __( "acessoRapido", "matematicaifmg" ),
+	);
+
+	$args = array(
+		"label" => __( "acessoRapido", "matematicaifmg" ),
+		"labels" => $labels,
+		"public" => true,
+		"hierarchical" => false,
+		"label" => "acessoRapido",
+		"show_ui" => true,
+		"show_in_menu" => true,
+		"show_in_nav_menus" => true,
+		"query_var" => true,
+		"rewrite" => array( 'slug' => 'acessorapido', 'with_front' => true, ),
+		"show_admin_column" => false,
+		"show_in_rest" => false,
+		"rest_base" => "acessorapido",
+		"show_in_quick_edit" => false,
+	);
+	register_taxonomy( "acessorapido", array( "acesso_rapido" ), $args );
+}
+
+add_action( 'init', 'cptui_register_my_taxes_acessorapido' );

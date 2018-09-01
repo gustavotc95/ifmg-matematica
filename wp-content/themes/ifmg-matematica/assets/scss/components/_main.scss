@@ -1,0 +1,251 @@
+html {
+    margin-top: 0px !important;
+}
+
+ /******** Topo ********/
+
+ header.green {
+    background-color: #0b681b;
+    background-image: -moz-radial-gradient(center,ellipse cover,#17882c 1%,#00510f 100%);
+    background-image: -webkit-gradient(radial,center center,0,center center,100%,color-stop(1%,#17882c),color-stop(100%,#00510f));
+    background-image: -webkit-radial-gradient(center,ellipse cover,#17882c 1%,#00510f 100%);
+    background-image: -o-radial-gradient(center,ellipse cover,#17882c 1%,#00510f 100%);
+    background-image: -ms-radial-gradient(center,ellipse cover,#17882c 1%,#00510f 100%);
+    background-image: radial-gradient(ellipse at center,#17882c 1%,#00510f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#157b28,endColorstr=#00510f,GradientType=1);
+    min-height: 150px;
+    width: 100%;
+}
+
+.wrapper.header {
+    background: none;
+}
+
+.content_header {
+	min-height: 36px;
+	width: 100%;
+	color: #fff;
+	font: 11px 'Montserrat',sans-serif;
+	letter-spacing: 4px;
+	padding: 11px 10px;
+	text-transform: uppercase;
+	box-sizing: border-box;
+}
+
+.content_header a{
+	color: #fff;
+}
+
+.content_header a:hover{
+	color: #fff;
+}
+
+.content_header span{
+	text-transform: none;
+	letter-spacing: 2px;
+}
+
+#menu_topo{
+	box-sizing: border-box;
+	height: 32px;
+	overflow: hidden;
+}
+
+#menu_topo span{
+	float: left;
+	padding: 7px 10px;
+}
+
+.hor_center{
+	margin: 6px 0;
+	float: left;
+}
+
+.hor_center a{
+	color: #FFFFFF;
+}
+
+.hor_center ul{
+	list-style: none;
+}
+
+.hor_center ul li{
+	float: left;
+	height: 20px;
+	padding: 3px 6px;
+	text-transform: uppercase;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+#menu-menu-topo ul {
+	display: none;
+}
+
+#menu_topo_list {
+	max-width: 810px;
+}
+
+#menu_topo_list ul li:last-child{
+	margin-right: 0px;
+}
+
+#menu_topo_acess{
+	float: right;
+}
+
+.fonte_aum {
+	font-size: 15px;
+	margin-left: 5px;
+}
+
+.fonte_nor {
+	font-size: 13px;
+	margin-left: 5px;
+}
+
+.fonte_dim{
+	font-size: 11px;
+	margin-left: 5px;
+}
+
+.acess{
+	font-weight: bold;
+	padding: 0 12px !important;
+}
+
+#header_content{
+	height: 110px;
+	padding: 15px 30px;
+	position: relative;
+}
+
+#und_vinc,
+.descricaosite {
+	display: block;
+    font-size: 1em;
+}
+
+.titulosite {
+	float: left;
+    font-size: 17px;
+    text-align: left;
+    /* max-width: 410px; */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 45px 0 0;
+}
+
+.titulosite a {
+	color: #fff;
+	text-decoration: none;
+}
+
+h1#nomesite {
+    letter-spacing: -1px;
+    margin-bottom: 5px;
+    font-weight: 800;
+    font-size: 2.1em;
+}
+
+.descricaosite {
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: normal;
+}
+
+#escudo {
+	float: left;
+}
+
+#escudo img {
+	width: auto;
+	height: 110px;
+}
+
+#busca{
+	right: 10px;
+	top: 55px;
+	position: absolute;
+}
+
+#campoBusca {
+    width: 184px;
+    border: 1px solid #e5e5e5;
+    padding: 4px;
+    font-size: 11px;
+    box-shadow: inset 1px 1px 0 rgba(102,102,102,0.54);
+    height: 14px;
+    box-sizing: unset;
+    vertical-align: bottom;
+}
+
+#busca .dashicons {
+    font-size: 23px;
+    background: #fff;
+    padding: 0px 6px 4px 3px;
+    box-shadow: inset 1px 1px 0 rgba(102, 102, 102, 0.54);
+    box-sizing: border-box;
+    width: 30px;
+	height: 24px;
+}
+
+#busca .dashicons:before {
+	content: "\f179";
+	width: 30px;
+	height: 24px;
+}
+
+input.buscar {
+    width: 30px;
+    height: 30px;
+    background: none;
+    position: relative;
+    top: -25px;
+    left: -3px;
+    cursor: pointer;
+    border: none;
+}
+
+ /******** Menu Principal ********/
+
+.wrapper.header.menu {
+    width: 100%;
+    background: #00420c;
+}
+
+#menu_principal{
+	height: 43px;
+    //width: 1200px;
+    margin: 0 auto
+}
+
+#menu_principal ul{
+	list-style: none;
+	display: table;
+	width: 100%;
+    height: 43px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#menu_principal ul li{
+    font-size: 13px;
+    position: relative;
+    display: inline-block;
+}
+
+#menu_principal ul li a{
+    color: #fff;
+    display: inline-block;
+    padding: 12px 20px;
+}
+
+ /******** Conteúdo princiapal ********/
+
+ .conteudo-principal {
+    padding-top: 15px;
+}
