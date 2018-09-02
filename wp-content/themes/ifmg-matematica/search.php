@@ -12,51 +12,63 @@
 
 get_header(); ?>
 
-<div class="wrap">
+<div class="container content conteudo-principal">
+    <div class="row">
+        <div class="col-md-2 col-sm-3 content-left">
+            <?php get_sidebar(); ?>
+        </div>
 
-	<header class="page-header">
-		<?php if ( have_posts() ) : ?>
-			<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-		<?php else : ?>
-			<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
-		<?php endif; ?>
-	</header><!-- .page-header -->
+        <div class="col-md-10 col-sm-9 content-right">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+			<div class="wrap">
 
-		<?php
-		if ( have_posts() ) :
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+			<header class="page-header">
+				<?php if ( have_posts() ) : ?>
+					<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentyseventeen' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<?php else : ?>
+					<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyseventeen' ); ?></h1>
+				<?php endif; ?>
+			</header><!-- .page-header -->
 
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/post/content', 'excerpt' );
+			<div id="primary" class="content-area">
+				<main id="main" class="site-main" role="main">
 
-			endwhile; // End of the loop.
+				<?php
+				if ( have_posts() ) :
+					/* Start the Loop */
+					while ( have_posts() ) : the_post();
 
-			the_posts_pagination( array(
-				'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
-				'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
-			) );
+						/**
+						 * Run the loop for the search to output the results.
+						 * If you want to overload this in a child theme then include a file
+						 * called content-search.php and that will be used instead.
+						 */
+						get_template_part( 'template-parts/post/content', 'excerpt' );
 
-		else : ?>
+					endwhile; // End of the loop.
 
-			<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
-			<?php
-				get_search_form();
+					the_posts_pagination( array(
+						'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
+						'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+						'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+					) );
 
-		endif;
-		?>
+				else : ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-	<?php get_sidebar(); ?>
-</div><!-- .wrap -->
+					<p><?php _e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'twentyseventeen' ); ?></p>
+					<?php
+				endif;
+				?>
+
+				</main><!-- #main -->
+			</div><!-- #primary -->
+			</div><!-- .wrap -->
+
+
+		</div>
+	</div>
+</div>
+
+
 
 <?php get_footer();

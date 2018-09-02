@@ -2,6 +2,18 @@ html {
     margin-top: 0px !important;
 }
 
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    img{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+b, strong {
+    font-weight: bold;
+}
+
  /******** Topo ********/
 
  header.green {
@@ -182,20 +194,12 @@ h1#nomesite {
     vertical-align: bottom;
 }
 
-#busca .dashicons {
-    font-size: 23px;
+#busca .buscar {
+    font-size: 14px;
     background: #fff;
-    padding: 0px 6px 4px 3px;
-    box-shadow: inset 1px 1px 0 rgba(102, 102, 102, 0.54);
-    box-sizing: border-box;
     width: 30px;
-	height: 24px;
-}
-
-#busca .dashicons:before {
-	content: "\f179";
-	width: 30px;
-	height: 24px;
+    height: 24px;
+    padding: 0;
 }
 
 input.buscar {
@@ -244,8 +248,191 @@ input.buscar {
     padding: 12px 20px;
 }
 
- /******** Conteúdo princiapal ********/
+ /******** Sidebar ********/
+ .acessoRapido{
+    ul{
+        padding: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        .item{
+            flex: 1 1 100%;
+            border: 1px solid;
+            background-color: #fff;
+            border-color: #ccc;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            &.half{
+                flex: 1 1 50%;
+            }
+            &:hover{
+                background-color: #e6e6e6;
+                border-color: #adadad;
+            }
+            a{
+                height: 65px;
+                display: flex;
+                justify-content: center;
+                img{
+                    margin: auto;
+                    padding: 2px;
+                    max-height: 100%;
+                    max-width: 90%;
+                }
+            }
+        }
+    }
+ }
 
- .conteudo-principal {
+/******** Conteúdo principal ********/
+
+.conteudo-principal {
     padding-top: 15px;
+}
+
+.content-left{
+    .widget{
+        margin-bottom: 20px;
+        .widget-title {
+            background-color: #f5f5f5;
+            border-bottom: 1px solid #e5e5e5;
+            border-top: 3px solid #118100;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 13px;
+            color: #444;
+            text-transform: uppercase;
+            padding: 5px 0 5px 8px;
+            height: 40px;
+            line-height: 25px;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+        .menu{
+            padding-left: 0;
+            li {
+                list-style: none;
+                a{
+                    color: #555;    
+                    position: relative;
+                    display: block;
+                    padding: 10px 15px;
+                    background-color: #fff;
+                    border-bottom: 1px solid #eee;
+                    font-size: 14px;
+                    &:hover{
+                        color: #118100;
+                        background-color: #f5f5f5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.content-right{
+    .banner-home{
+        margin-bottom: 20px;
+    }
+    .panel-heading {
+        background-color: #f5f5f5;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 7px 0 5px 0;
+        padding-left: 0;
+        border-radius: 0;
+        border-top: 3px solid #337ab7;
+        margin-bottom: 5px;
+        h2{
+            font-weight: bold;
+            font-size: .9em;
+            color: #444;
+            text-transform: uppercase;
+            padding: 5px 0 5px 8px;
+            padding-right: 15px;
+            margin-bottom: 0
+        }
+    }
+    .textoHome{
+        font-size: 14px;
+        padding: 15px;
+    }
+}
+
+/******** Conteúdo interno ********/
+
+.breadcrumb{
+    .breadcrumb-item{
+        &:first-child{
+            &:before{
+                content: \f015;
+                font-family: "Font Awesome 5 Pro";
+                font-family: "Font Awesome 5 Brands";
+
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+.entry-header {
+    padding-bottom: 5px;
+    margin: 0 0 5px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 25px;
+    h1{
+        margin-bottom: 5px;
+        color: #444;
+        margin-top: 0;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 1.1;
+    }
+}
+
+/******** Rodapé ********/
+
+ #footer {
+    background: #00420c;
+    min-height: 1px;
+    height: auto;
+    margin-top: 15px;
+    padding-top: 15px;
+    width: 100%;
+    bottom: 0;
+    nav {
+        border-left: 1px dotted #80a887;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        h2, h3 {
+            color: #61b06f;
+            font-size: 1.25em;
+            font-weight: bold;
+            text-shadow: 1px 1px 0 rgba(50,50,50,.35);
+        }
+        ul {
+            padding: 0;
+            li {
+                list-style: none;
+                a {
+                    font-size: .95em;
+                    padding: 0 0 5px 0;
+                    display: block;
+                    color: #fff;
+                    text-shadow: 1px 1px 0 rgba(50,50,50,.35);
+                }
+            }
+        }
+    }
+    .footer1 {
+        width: 100%;
+        background-color: #02300b;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    .footer2 {
+        background-color: #f5f5f5;
+        border-top: 1px solid #e6e6e6;
+        color: #444;
+        width: 100%;
+        padding: 20px 0;
+        bottom: 0;
+    }
 }

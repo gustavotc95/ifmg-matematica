@@ -9,7 +9,7 @@
             <?php get_sidebar(); ?>
         </div>
 
-        <div class="col-md-10 col-sm-9 content-left">
+        <div class="col-md-10 col-sm-9 content-right">
             <div class="banner-home">
                 <a href="<?php echo get_field('imagem_principal_home')['url'] ?>" target="_blank">
                     <img src="<?php echo get_field('imagem_principal_home')['imagem']; ?>" alt="">
@@ -17,13 +17,14 @@
                 
             </div>
             <div class="panel-heading">
-                <h2 class="panel-title"> Destaques </h2>
+                <h2 class="panel-title">Apresentação do Curso</h2>
+            </div>
+            <div class="textoHome">
+                <?php echo get_field('texto_home'); ?>
             </div>
 
             <div>
-                <?php
-                    print_r(get_field('acesso_rapido_item', 40));
-                ?>
+
             </div>
         </div>
     </div>
